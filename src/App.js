@@ -18,7 +18,7 @@ function App() {
           Learn React new code
         </a>
         <p>
-          new text for not master and not alex branch and not user
+          new text
         </p>
       </header>
     </div>

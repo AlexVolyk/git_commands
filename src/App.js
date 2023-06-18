@@ -18,7 +18,7 @@ function App() {
           Learn React new code
         </a>
         <p>
-          new text
+          new text why ----------------------
         </p>
       </header>
     </div>

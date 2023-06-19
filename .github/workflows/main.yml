@@ -1,12 +1,12 @@
 name: my first test
 on: push
+env:
+  bob: bob marley
+  aboba: aboba marley
+  password: ${{ secrets.PASSWORD }}
 jobs:
   my-first-real-action:
     runs-on: ubuntu-latest
-    env:
-      bob: bob marley
-      aboba: aboba marley
-      password: ${{secrets.PASSWORD }}
 
     steps:
       - name: CheckOut library
@@ -23,10 +23,10 @@ jobs:
           echo "${{ vars.VAR }}"
 
 
-      - name: test
-        # uses: actions/checkout@v3
-        run: npm run test
-      - name: build
-        run: npm run build
+      # - name: test
+      #   # uses: actions/checkout@v3
+      #   run: npm run test
+      # - name: build
+      #   run: npm run build
       # - name: start
       #   run: npm start

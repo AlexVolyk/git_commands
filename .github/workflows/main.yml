@@ -6,7 +6,7 @@ jobs:
     env:
       bob: bob marley
       aboba: aboba marley
-      password: ${{secrets.PASSWORD}}
+      password: ${{secrets.PASSWORD }}
 
     steps:
       - name: CheckOut library

@@ -8,7 +8,7 @@ jobs:
 
       - name: CheckOut library
         uses: actions/checkout@v3
-        run: echo "aboba boba"
+      - run: echo "aboba boba"
       - name: Install
         # uses: actions/checkout@v3
         run: npm ci

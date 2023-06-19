@@ -3,13 +3,15 @@ on: push
 jobs:
   my-first-real-action:
     runs-on: ubuntu-latest
+    
     steps:
+
       - name: CheckOut library
         uses: actions/checkout@v3
-      - run: echo "aboba boba"
+        run: echo "aboba boba"
       - name: Install
-        uses: actions/checkout@v3
-      - run: npm ci
+        # uses: actions/checkout@v3
+        run: npm ci
       - name: test
-        uses: actions/checkout@v3
-      - run: npm run test
+        # uses: actions/checkout@v3
+        run: npm run test

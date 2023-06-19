@@ -6,6 +6,7 @@ jobs:
     env:
       bob: bob marley
       aboba: aboba marley
+      password: ${{secret.password}}
 
     steps:
       - name: CheckOut library
@@ -18,6 +19,9 @@ jobs:
         run: |
           echo "${{ env.bob }}"
           echo "${{ env.aboba }}"
+          echo "${{ env.password }}"
+          echo "${{ vars.var }}"
+
 
       - name: test
         # uses: actions/checkout@v3

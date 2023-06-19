@@ -2,16 +2,23 @@ name: my first test
 on: push
 jobs:
   my-first-real-action:
-    runs-on: windows-latest
-    
-    steps:
+    runs-on: ubuntu-latest
+    env:
+      bob: bob marley
+      aboba: aboba marley
 
+    steps:
       - name: CheckOut library
         uses: actions/checkout@v3
       - run: echo "aboba boba"
       - name: Install
         # uses: actions/checkout@v3
         run: npm install
+      - name: env value
+        run: |
+          echo "${{ env.bob }}"
+          echo "${{ env.aboba }}"
+
       - name: test
         # uses: actions/checkout@v3
         run: npm run test
